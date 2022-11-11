@@ -35,8 +35,7 @@ const callback = (response: any) => {
   }
   user = userData.given_name;
   localStorage.setItem("userName", user);
-  if (userData.hd) router.push("customerMessagingSystem");
-  else alert("Unauthorized User. Please login via Official Email ID");
+  router.push("customerMessagingSystem");
 };
 
 if (userName != "") router.push("customerMessagingSystem");
